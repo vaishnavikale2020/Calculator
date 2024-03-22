@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let person={
+			name:"abc",
+			age:24,
+			native:"pune",
+			subject:["sql","js","j2ee"],
+			hobies:["dancin","playing music","bxhjs","jnjhnsnd"]
+		}
+
+		person1=Object.create(person);
+		document.write(`my name is ${person.name} and my age is ${person.age} and live in ${person.native}, I have good knoledge of `)
+		person.subject.forEach((sub,cnt)=>document.write(++cnt+". "+sub+", "))
+		document.write(`and my hobies are `)
+		person.hobies.forEach((hob,cnt)=>document.write(++cnt+". "+hob+", "))
+		document.write("<br>");
+		document.write("<br>");
+
+		//person1.name="radha";
+		person1.hobies=["music listernig","making rangoli","playing games"]
+		person1.subject=["hibernate","spring"]
+		document.write(`my name is ${person1.name="radha"} and my age is ${person1.age=21} and live in ${person1.native="mumbai"}, I have good knoledge of `)
+		person1.subject.forEach((sub,cnt)=>document.write(++cnt+". "+sub+", "))
+		document.write(`and my hobies are `)
+		person1.hobies.forEach((hob,cnt)=>document.write(++cnt+". "+hob+", "))
+
+
+	</script>
+
+</body>
+</html>

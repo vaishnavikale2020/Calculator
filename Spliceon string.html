@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let personName=["ramesh","suresh","ganesh","naman"];
+		console.log(personName+"<br>");
+
+		let searchName=prompt("enter the name you are searching for:");
+
+		let replaceName=prompt("enter the name you want to replace");
+
+		//splice function will return element from existing array and replace it with new element 
+		personName.splice(personName.indexOf(searchName),1,replaceName)
+
+		console.log(searchName);
+		console.log(replaceName);
+
+		personName.forEach((name)=>document.write(name+"<br>"));
+
+
+
+	</script>
+
+</body>
+</html>

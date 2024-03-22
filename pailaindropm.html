@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+			let pailindrome=(person)=>{
+				let rev=person.split("").reverse().join("");
+				if (rev==person) {
+					return person;
+				}
+			}
+
+		
+			let personName=["ramesh","nitin","ganesh","naman","mahesh"];
+			let pal=personName.filter((person)=>pailindrome(person))
+			
+
+			document.write(personName+"<br>");
+			document.write(pal+" "+"is a pailandrom");
+
+
+
+
+	</script>
+
+</body>
+</html>

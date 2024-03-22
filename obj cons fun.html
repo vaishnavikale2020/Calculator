@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>using constructor function</title>
+</head>
+<body>
+	<script type="text/javascript">
+			/*function subject(sub1,sub2,sub3) {
+				this.sub1=sub1;
+				this.sub2=sub2;
+				this.sub3=sub3;
+			}*/
+		function subject(a,b,c){
+			this.sub1=a;
+			this.sub2=b;
+			this.sub3=c;
+
+			console.log(this.subj1);
+		}		
+
+		let obj=new subject("sql","manual","java");
+		console.log(obj.sub1);
+		console.log(obj.sub2);
+		console.log(obj.sub3)
+
+
+	</script>
+
+</body>
+</html>

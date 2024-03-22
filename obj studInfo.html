@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let person1={
+			name:"vaishnavi",
+			native:"pune",
+			education:{
+				graduation:"computer science",
+				yop:2022,
+				college:"SGBAU",
+			},
+			subjects:["sql","java","javascript","j2ee","Manual Testing"],
+			 hobies:["dancing","listerning music","Drawing"],
+			strength:["I am hardworking and asserative person"]
+		}
+
+	
+		let person=Object.create(person1)
+		person.name="radha"
+		document.write(person.name+"<br>");
+		document.write("I have knowledge of following technologies"+"<br>");
+		person.subjects.forEach((sub,cnt)=>document.write(++cnt +" "+sub+"<br>"));
+		document.write(`I have completed my graduation in ${person.education.gradution}
+			and completed in year ${person.education.yop} from ${person.education.college}`+"<br>")
+		document.write(`here are my some hobies:`+" ")
+		person.hobies.forEach((hob,cnt)=>document.write(++cnt+" "+hob+"."))
+		document.write("<br>")
+		document.write(`and My strength is: ${person.strength} `+"<br>");
+
+
+
+		document.write("<br>")
+		document.write(`My name is ${person1.name}`+"<br>");
+		document.write("I have knowledge of following technologies"+"<br>");
+		person1.subjects.forEach((sub,cnt)=>document.write(++cnt +" "+sub+"<br>"));
+		document.write(`I have completed my graduation in ${person1.education.gradution}
+			and completed in year ${person1.education.yop} from ${person1.education.college}`)
+
+
+	</script>
+
+</body>
+</html>

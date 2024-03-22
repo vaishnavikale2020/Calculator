@@ -1,0 +1,26 @@
+<!-- to print hello in uppercase -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String method</title>
+</head>
+<body>
+<script type="text/javascript">
+	let a="hello";
+  document.write(a+"<br>")
+	//document.write(a.toUpperCase());
+	let b=a.split('');
+    for(let i=0;i<a.length;i++)
+    {
+     let c=a.charCodeAt(i);
+     if(c>=97 && c<=122)
+     {
+       b[i]=String.fromCharCode(c-32);
+     }
+    }
+    document.write(b.join(''));
+</script>
+</body>
+</html>

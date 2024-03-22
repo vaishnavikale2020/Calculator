@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>random otp</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		 // document.write(Math.round(Math.random()*1000000));
+
+			let otp=(Math.round(Math.random()*1000000));
+			let str=otp.toString();
+			// document.write(typeof str);
+
+		document.write((str.length>6?str:str.substr(0,str.length-1)));
+		
+		
+		
+		</script>
+
+</body>
+</html>

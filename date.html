@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Date</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let dt=new Date();
+		let dy=(dt.getDay());//it will give a day starting from index 0
+
+		switch(dy)
+		{
+		case 0:document.write("sunday");break;
+		case 1:document.write("monday");break;
+		case 2:document.write("tuesday");break;
+		case 3:document.write("wenesday");break
+		case 4:document.write("thursday");break
+		case 5:document.write("friday");break
+		case 6:document.write("saturday");break
+		}
+
+	</script>
+
+</body>
+</html>
