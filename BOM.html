@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>open close function </title>
+
+</head>
+<body>
+<button onclick="openGoogle()">openGoogle</button>
+<button onclick="closeGoogle()">closeGoogle</button>
+<button onclick="closeCurntWindow()">closeGoogle</button>
+
+<script type="text/javascript">
+	
+let google;
+	
+	function openGoogle() {
+	 google=open("http://www.google.com");
+		}
+
+	function closeGoogle() {
+	google.close();
+	}
+	
+	function closeCurntWindow() {
+		close();
+	}
+</script>
+</body>
+</html>
